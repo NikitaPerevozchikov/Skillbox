@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainForm">
+  <grid id="27dc6" binding="mainPanel" layout-manager="CardLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="9" y="5" width="587" height="353"/>
+    </constraints>
+    <properties>
+      <inheritsPopupMenu value="true"/>
+      <maximumSize width="0" height="0"/>
+      <minimumSize width="0" height="0"/>
+      <preferredSize width="0" height="0"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="7e69" binding="resultPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="Card2"/>
+        </constraints>
+        <properties>
+          <preferredSize width="600" height="600"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="cd9ba" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints border-constraint="South"/>
+            <properties>
+              <opaque value="false"/>
+              <preferredSize width="1" height="100"/>
+              <requestFocusEnabled value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="6ffca" class="javax.swing.JButton" binding="splitButton">
+                <constraints/>
+                <properties>
+                  <font size="14" style="1"/>
+                  <label value="Разделить"/>
+                  <preferredSize width="130" height="50"/>
+                  <text value="Разделить"/>
+                </properties>
+              </component>
+              <component id="2a6b2" class="javax.swing.JButton" binding="backButton">
+                <constraints/>
+                <properties>
+                  <font size="14" style="1"/>
+                  <label value="Назад"/>
+                  <preferredSize width="130" height="50"/>
+                  <text value="Назад"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="d8d25" layout-manager="GridBagLayout">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <opaque value="true"/>
+              <preferredSize width="1" height="500"/>
+              <requestFocusEnabled value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="a86ea" class="javax.swing.JTextArea" binding="textFIO">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                  <gridbag top="0" left="5" bottom="0" right="5" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="14" style="1"/>
+                  <margin top="8" left="8" bottom="0" right="0"/>
+                  <minimumSize width="400" height="30"/>
+                  <preferredSize width="450" height="30"/>
+                </properties>
+              </component>
+              <component id="29123" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="14" style="1"/>
+                  <requestFocusEnabled value="false"/>
+                  <text value="ФИО"/>
+                </properties>
+              </component>
+              <component id="adde1" class="javax.swing.JButton" binding="clearFIOButton">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="14" style="1"/>
+                  <text value="Очистить"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="79606" binding="startPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="Card1"/>
+        </constraints>
+        <properties>
+          <minimumSize width="0" height="0"/>
+          <preferredSize width="0" height="0"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="27d0b" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints border-constraint="South"/>
+            <properties>
+              <opaque value="true"/>
+              <preferredSize width="10" height="100"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="fcf52" class="javax.swing.JButton" binding="joinButton">
+                <constraints/>
+                <properties>
+                  <font size="14" style="1"/>
+                  <preferredSize width="130" height="50"/>
+                  <requestFocusEnabled value="true"/>
+                  <text value="Объеденить"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="76070" layout-manager="GridBagLayout">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <enabled value="false"/>
+              <preferredSize width="10" height="500"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="bb409" class="javax.swing.JTextArea" binding="textName">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                  <gridbag top="2" left="5" bottom="2" right="5" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="14" style="1"/>
+                  <margin top="5" left="8" bottom="1" right="1"/>
+                  <minimumSize width="250" height="30"/>
+                  <preferredSize width="250" height="30"/>
+                  <tabSize value="8"/>
+                  <verifyInputWhenFocusTarget value="true"/>
+                </properties>
+              </component>
+              <component id="a907e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="14" style="1"/>
+                  <text value="Фамилия"/>
+                </properties>
+              </component>
+              <component id="8ac6e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="14" style="1"/>
+                  <text value="Имя"/>
+                </properties>
+              </component>
+              <component id="a924d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="14" style="1"/>
+                  <preferredSize width="80" height="20"/>
+                  <text value="Отвество"/>
+                </properties>
+              </component>
+              <component id="8b4bf" class="javax.swing.JTextArea" binding="textFirstName">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                  <gridbag top="0" left="5" bottom="0" right="5" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="14" style="1"/>
+                  <margin top="5" left="8" bottom="1" right="1"/>
+                  <minimumSize width="250" height="30"/>
+                  <preferredSize width="250" height="30"/>
+                  <tabSize value="8"/>
+                  <verifyInputWhenFocusTarget value="true"/>
+                </properties>
+              </component>
+              <component id="1fdcf" class="javax.swing.JTextArea" binding="textMiddleName">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                  <gridbag top="0" left="5" bottom="0" right="5" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="14" style="1"/>
+                  <margin top="5" left="8" bottom="1" right="1"/>
+                  <minimumSize width="250" height="30"/>
+                  <preferredSize width="250" height="30"/>
+                  <tabSize value="8"/>
+                  <verifyInputWhenFocusTarget value="true"/>
+                </properties>
+              </component>
+              <component id="b0d99" class="javax.swing.JButton" binding="clearFirstNameButton">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="14" style="1"/>
+                  <text value="Очистить"/>
+                </properties>
+              </component>
+              <component id="48dda" class="javax.swing.JButton" binding="clearNameButton">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag top="2" left="0" bottom="2" right="0" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="14" style="1"/>
+                  <text value="Очистить"/>
+                </properties>
+              </component>
+              <component id="848ca" class="javax.swing.JButton" binding="clearMiddleNameButton">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="14" style="1"/>
+                  <text value="Очистить"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}"></title>
+</head>
+<body>
+<p style="font:20px Arial" th:text="${task.name}">Задача</p>
+<hr/>
+<table style="font:14px Arial">
+    <tbody>
+    <tr>
+        <td>Id:</td>
+        <td><span th:text="${task.id}"></span></td>
+    </tr>
+    <tr>
+        <td>Name:</td>
+        <td><span th:text="${task.name}"></span></td>
+    </tr>
+    <tr>
+        <td>Text:</td>
+        <td><span th:text="${task.text}"></span></td>
+    </tr>
+    <tr>
+        <td>DeadLine:</td>
+        <td><span th:text="${task.deadline}"></span></td>
+    </tr>
+    </tbody>
+</table>
+<form action="/tasks" method="GET">
+    <button style="width:200px; font:14px Arial">Вернуться назад</button>
+</form>
+</body>
+</html>

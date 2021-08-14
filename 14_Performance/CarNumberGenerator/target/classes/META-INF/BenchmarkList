@@ -1,0 +1,3 @@
+JMH S 18 jmh.TestGeneration S 73 jmh.jmh_generated.TestGeneration_testGenerationLoaderLoaderThread_jmhTest S 32 testGenerationLoaderLoaderThread S 11 AverageTime E A 1 1 1 E I 1 0 E E I 1 2 E E I 1 1 E E E E E E E E E 
+JMH S 18 jmh.TestGeneration S 71 jmh.jmh_generated.TestGeneration_testGenerationLoaderFileChanel_jmhTest S 30 testGenerationLoaderFileChanel S 11 AverageTime E A 1 1 1 E I 1 0 E E I 1 2 E E I 1 1 E E E E E E E E E 
+JMH S 18 jmh.TestGeneration S 61 jmh.jmh_generated.TestGeneration_testGenerationLoader_jmhTest S 20 testGenerationLoader S 11 AverageTime E A 1 1 1 E I 1 0 E E I 1 2 E E I 1 1 E E E E E E E E E 

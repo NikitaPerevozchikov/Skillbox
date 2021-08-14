@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome!</title>
+</head>
+<body>
+<p style="font:20px Arial">Программа ToDoList</p>
+<hr/>
+<form action="/tasks/new" method="GET">
+    <button style="width:200px; height:30px; font:14px Arial"> Создание задачи</button>
+</form>
+<p style="font:14px Arial">Всего задач (<span th:text="${count}"></span>)</p>
+<table>
+    <tbody>
+    <div th:each="task : ${tasksLIst}">
+        <tr style="height:30px">
+            <td>
+                <form th:action="@{tasks/{id} (id = ${task.id})}" th:attr="id=${task.id}" method="GET">
+                    <button style="width:200px; font:14px Arial" th:text="${task.name}"></button>
+                </form>
+            </td>
+            <td>
+                <form th:action="@{tasks/{id} (id = ${task.id})}" th:attr="id=${task.id}" th:method="DELETE">
+                    <button style="font:14px Arial">Delete</button>
+                </form>
+            </td>
+            <td>
+                <form th:action="@{tasks/{id}/create (id = ${task.id})}" th:attr="id=${task.id}" method="GET">
+                    <button style="font:14px Arial">Create</button>
+                </form>
+            </td>
+        </tr>
+    </div>
+    </tbody>
+</table>
+</body>
+</html>

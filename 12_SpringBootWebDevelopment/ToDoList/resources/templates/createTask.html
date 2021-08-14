@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Task</title>
+</head>
+<body>
+<p style="font:20px Arial">Изменение задачи</p>
+<hr/>
+<form th:action="@{/tasks/{id}/create (id = ${task.id})} " th:object="${result}" th:method="PATCH">
+    <table>
+        <tbody>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" th:field="${task.name}"/></td>
+        </tr>
+        <tr>
+            <td>Text:</td>
+            <td><input type="text" th:field="${task.text}"/></td>
+        </tr>
+        <tr>
+            <td>DeadLine:</td>
+            <td><input type="text" th:field="${task.deadline}"/></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Ok">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>
